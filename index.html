@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>A&amp;P Weby – Moderné weby pre lokálne firmy</title>
+  <meta name="description" content="Vytvárame rýchle, responzívne a krásne webové stránky pre lokálne firmy.">
+  <meta name="color-scheme" content="dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#1B3B56',
+            gold: '#F3CE74',
+            ink: '#F8FAFC',
+            mute: '#A9BDD0'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: dark;
+      box-sizing: border-box;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+      background: #1B3B56;
+    }
+    html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+    body { background: #1B3B56; color: #F8FAFC; -webkit-font-smoothing: antialiased; }
+    ::selection { background: #F3CE74; color: #1B3B56; }
+  </style>
+</head>
+<body class="font-sans font-normal antialiased">
+
+  <header class="mx-auto flex max-w-5xl items-center justify-between px-6 py-8 md:px-10 md:py-10">
+    <a href="#" class="text-lg font-semibold tracking-tight text-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">A&amp;P Weby</a>
+    <nav aria-label="Hlavná navigácia" class="flex items-center gap-5 text-sm md:gap-10">
+      <a href="#sluzby" class="text-mute transition-colors hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">Služby</a>
+      <a href="#nase-prace" class="text-mute transition-colors hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">Naše práce</a>
+      <a href="mailto:kontakt.apweby@gmail.com" class="text-mute transition-colors hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="mx-auto max-w-5xl px-6 pb-32 pt-24 md:px-10 md:pb-48 md:pt-40">
+      <h1 class="max-w-3xl text-4xl font-bold leading-[1.08] tracking-tight text-ink sm:text-5xl md:text-7xl">
+        Moderné weby, ktoré posunú váš biznis vpred.
+      </h1>
+      <p class="mt-8 max-w-xl text-lg leading-relaxed text-mute md:mt-10 md:text-xl">
+        Vytvárame rýchle, responzívne a krásne webové stránky pre lokálne firmy. Čistý dizajn, ktorý funguje na každom zariadení.
+      </p>
+      <a href="mailto:kontakt.apweby@gmail.com"
+         class="mt-12 inline-block rounded-full bg-gold px-8 py-4 text-base font-semibold text-navy transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink md:mt-14">
+        Mám záujem o web
+      </a>
+    </section>
+
+    <section id="sluzby" class="mx-auto max-w-5xl px-6 pb-32 md:px-10 md:pb-48" aria-labelledby="sluzby-nadpis">
+      <h2 id="sluzby-nadpis" class="sr-only">Služby</h2>
+      <div class="grid gap-14 md:grid-cols-3 md:gap-12">
+        <article class="border-t border-ink/15 pt-8">
+          <h3 class="text-xl font-semibold text-ink">Moderný dizajn</h3>
+          <p class="mt-4 leading-relaxed text-mute">Čistý, nadčasový vzhľad, ktorý zodpovedá vašej značke a pôsobí dôveryhodne už na prvý pohľad.</p>
+        </article>
+        <article class="border-t border-ink/15 pt-8">
+          <h3 class="text-xl font-semibold text-ink">Responzivita</h3>
+          <p class="mt-4 leading-relaxed text-mute">Web vyzerá a funguje rovnako dobre na mobile, tablete aj počítači.</p>
+        </article>
+        <article class="border-t border-ink/15 pt-8">
+          <h3 class="text-xl font-semibold text-ink">Rýchlosť</h3>
+          <p class="mt-4 leading-relaxed text-mute">Odľahčený kód a rýchle načítanie. Návštevníci nečakajú a vy o zákazníkov neprichádzate.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="nase-prace" class="mx-auto max-w-5xl px-6 pb-32 md:px-10 md:pb-48" aria-labelledby="nase-prace-nadpis">
+      <h2 id="nase-prace-nadpis" class="text-3xl font-bold tracking-tight text-ink md:text-4xl">Naše práce</h2>
+      <p class="mt-4 max-w-md leading-relaxed text-mute">Výber našich posledných projektov pre lokálne firmy.</p>
+
+      <div class="mt-14 grid gap-6 md:mt-16 md:grid-cols-3">
+        <a href="https://alexozaniak.github.io/Ms-Salon/" target="_blank" rel="noopener noreferrer"
+           class="group flex flex-col justify-between rounded-2xl border border-ink/15 p-8 transition duration-300 hover:scale-[1.015] hover:border-gold/70 motion-reduce:transform-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">
+          <div>
+            <h3 class="text-xl font-semibold text-ink">Kozmetický salón MS</h3>
+            <p class="mt-4 leading-relaxed text-mute">Prémiový web pre kozmetický salón, ktorý pôsobí elegantne a prehľadne.</p>
+          </div>
+          <span class="mt-12 text-sm font-semibold text-gold">Pozrieť web →</span>
+        </a>
+
+        <a href="https://alexozaniak.github.io/servisMk/" target="_blank" rel="noopener noreferrer"
+           class="group flex flex-col justify-between rounded-2xl border border-ink/15 p-8 transition duration-300 hover:scale-[1.015] hover:border-gold/70 motion-reduce:transform-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">
+          <div>
+            <h3 class="text-xl font-semibold text-ink">Auto-servis M&amp;K</h3>
+            <p class="mt-4 leading-relaxed text-mute">Moderný web pre lokálny autoservis s jasnou ponukou služieb a rýchlym kontaktom.</p>
+          </div>
+          <span class="mt-12 text-sm font-semibold text-gold">Pozrieť web →</span>
+        </a>
+
+        <a href="https://alexozaniak.github.io/NaramkyWeb/" target="_blank" rel="noopener noreferrer"
+           class="group flex flex-col justify-between rounded-2xl border border-ink/15 p-8 transition duration-300 hover:scale-[1.015] hover:border-gold/70 motion-reduce:transform-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">
+          <div>
+            <h3 class="text-xl font-semibold text-ink">Handmade Bracelets</h3>
+            <p class="mt-4 leading-relaxed text-mute">Elegantná prezentácia ručne vyrábaných náramkov.</p>
+          </div>
+          <span class="mt-12 text-sm font-semibold text-gold">Pozrieť web →</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mx-auto max-w-5xl px-6 pb-12 md:px-10 md:pb-16">
+    <div class="flex flex-col gap-6 border-t border-ink/15 pt-8 md:flex-row md:items-baseline md:justify-between">
+      <a href="mailto:kontakt.apweby@gmail.com" class="text-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">kontakt.apweby@gmail.com</a>
+      <p class="max-w-md text-sm leading-relaxed text-mute md:text-right">Tento web slúži výhradne ako študentské portfólio a prezentácia projektov.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
