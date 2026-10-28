@@ -1,0 +1,24 @@
+{
+  "name": "nasweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexOzaniak/APWeby.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AlexOzaniak/APWeby/issues"
+  },
+  "homepage": "https://github.com/AlexOzaniak/APWeby#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.3.3"
+  }
+}
